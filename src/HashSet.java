@@ -3,6 +3,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.HashMap;
 
+
 public class HashSet <E> implements Set<E> {
 
     private static final Object DUMMY = new Object();
@@ -16,6 +17,7 @@ public class HashSet <E> implements Set<E> {
         addAll(c);
     }
 
+    //all method detail : https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashSet.html
     @Override
     public int size() {
         return map.size();
