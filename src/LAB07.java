@@ -10,6 +10,7 @@ public class LAB07 {
         set.add("B");
         set.add("C");
         set.add("D");
+        System.out.println(set);
 
         System.out.println("size: " + set.size());
         System.out.println("contains 'B': " + set.contains("B"));
@@ -26,9 +27,14 @@ public class LAB07 {
         System.out.println("Size after add: " + set.size());
 
         System.out.println("Removing elements present in another collection:");
-        Set<String> removeSet = Set.of("C", "E");
+        Set<String> removeSet = Set.of("C", "D");
         set.removeAll(removeSet);
         System.out.println("Size after remove: " + set.size());
+
+        System.out.println("Retain");
+        Set<String> retainSet = Set.of("A", "F");
+        set.retainAll(retainSet);
+        System.out.println("Set size after retaining elements: " + set.size());
 
         System.out.println("Clearing");
         set.clear();
